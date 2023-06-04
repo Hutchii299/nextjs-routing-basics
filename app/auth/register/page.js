@@ -3,16 +3,16 @@ import { AiOutlineFolderOpen } from "react-icons/ai";
 import { FaRoute } from "react-icons/Fa";
 import { TbFileInvoice } from "react-icons/tb";
 import { usePathname } from "next/navigation";
-import Container from "./components/Container";
+import Container from "@/app/components/Container";
 
-export default function Home() {
+const RegisterPage = () => {
   const pathname = usePathname();
   return (
-    <Container title="Root Page" bgColor="bg-white">
-      <div className="grid grid-cols-3 items-center gap-4 justify-items-center max-w-lg py-12">
+    <Container title={"Register Page"} bgColor="bg-register">
+      <div className="grid grid-cols-3 items-center gap-4 justify-items-center max-w-lg">
         <AiOutlineFolderOpen size={"4rem"} />
         <p className="font-semibold">Segment: </p>
-        <p>&quot;app&quot;</p>
+        <p>&quot;register&quot;</p>
         <TbFileInvoice size={"4rem"} />
         <p className="font-semibold">File: </p>
         <p>&quot;page.js&quot;</p>
@@ -22,4 +22,6 @@ export default function Home() {
       </div>
     </Container>
   );
-}
+};
+
+export default RegisterPage;
