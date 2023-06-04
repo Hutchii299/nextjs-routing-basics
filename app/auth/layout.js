@@ -1,11 +1,8 @@
 "use client";
 import { AiOutlineFolderOpen } from "react-icons/ai";
-import { FaRoute } from "react-icons/Fa";
 import { TbFileInvoice } from "react-icons/tb";
-import { usePathname } from "next/navigation";
 
 const AuthLayout = ({ children }) => {
-  const pathname = usePathname();
   return (
     <div className="bg-auth w-full py-8 px-4 rounded-xl">
       <div className="pl-4 mb-8 flex flex-col gap-4">

@@ -12,7 +12,7 @@ export default function Home() {
       <div className="grid grid-cols-3 items-center gap-4 justify-items-center max-w-lg py-12">
         <AiOutlineFolderOpen size={"4rem"} />
         <p className="font-semibold">Segment: </p>
-        <p>&quot;app&quot;</p>
+        <p>&quot;/&quot;</p>
         <TbFileInvoice size={"4rem"} />
         <p className="font-semibold">File: </p>
         <p>&quot;page.js&quot;</p>
